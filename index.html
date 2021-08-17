@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendar</title>
+
+    <link rel="shortcut icon" size="64x64" href="./favicon.ico" />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <section class="calendar">
+      <h1 class="c-title">Calendar</h1>
+      <div class="YM">
+        <button class="left" onclick="preYm()"><</button>
+        <!-- <input class="left" type="button" value="<" onclick="preYm()" /> -->
+        <p class="ym"></p>
+        <button class="right" onclick="nextYm()">></button>
+        <!-- <input class="right" type="button" value=">" onclick="nextYm()" /> -->
+      </div>
+      <div class="day">
+        <ul class="day-name">
+          <li class="red">SUN</li>
+          <li>MON</li>
+          <li>TUE</li>
+          <li>WEN</li>
+          <li>THU</li>
+          <li>FRI</li>
+          <li class="blue">SAT</li>
+        </ul>
+      </div>
+      <ul class="day-count"></ul>
+    </section>
+
+    <section class="todo">
+      <h1 class="todo-title">To do List</h1>
+      <div class="todo-main">
+        <input type="text" class="input" />
+        <button class="add">Add</button>
+        <button class="reset">Reset</button>
+        <button class="allreset">All Reset</button>
+      </div>
+      <ul class="todo-list"></ul>
+    </section>
+  </body>
+</html>

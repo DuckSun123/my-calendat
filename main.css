@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar {
+  width: 640px;
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.calendar .c-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.calendar .YM {
+  display: flex;
+  width: 640px;
+  padding-bottom: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.calendar .YM .ym {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.calendar .YM .left {
+  left: 10px;
+  width: 30px;
+  font-size: 15px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.calendar .YM .right {
+  right: 10px;
+  width: 30px;
+  font-size: 15px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.calendar .day {
+  width: 100%;
+}
+
+.calendar .day .day-name {
+  display: flex;
+}
+.calendar .day .day-name .red {
+  color: red;
+}
+.calendar .day .day-name .blue {
+  color: blue;
+}
+
+.calendar .day .day-name li {
+  width: 100px;
+}
+
+.calendar .day-count {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.calendar .day-count li {
+  font-size: 12px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  text-align: start;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+.calendar .day-count li:hover {
+  cursor: pointer;
+  border: 3px solid blue;
+  transition: 0.1s;
+  transform: all;
+}
+
+/* .calendar .day-count li:last-child {
+  margin-right: 10px;
+} */
+.todo {
+  width: 640px;
+  background-color: skyblue;
+  border-radius: 10px;
+  margin: 10px auto 10px;
+  text-align: center;
+}
+
+.todo .todo-title {
+  padding-top: 10px;
+}
+
+.todo .todo-main {
+  padding: 10px;
+}
+
+.todo .todo-main .input {
+  outline: none;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid #ff9012;
+}
+
+.todo .todo-main .add,
+.todo .todo-main .reset,
+.todo .todo-main .allreset {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid #ff9012;
+}
+
+.todo .todo-list {
+  padding-left: 50px;
+  text-align: start;
+}
+.todo .todo-list li {
+  position: relative;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.todo .todo-list li .deleteBtn {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  font-size: 11px;
+  right: 50px;
+  border-radius: 5px;
+  border: 2px solid #ff1745;
+}
